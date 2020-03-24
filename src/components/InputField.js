@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
 
 function InputField() {
     const classes = useStyles();
-
     return (
         <form className={classes.root} noValidate autoComplete="off">
             <TextField id="outlined-basic" label="Value" variant="outlined"/>

@@ -1,9 +1,43 @@
 import React, {Component} from 'react';
+import InputField from "./InputField";
 
 
 class Converter extends Component {
     state = {
-        currencies: ["USD", "INR", "CAD"],
+        currencies: [
+            "USD",
+            "INR",
+            "CAD",
+            "HKD",
+            "ISK",
+            "PHP",
+            "DKK",
+            "HUF",
+            "CZK",
+            "AUD",
+            "RON",
+            "SEK",
+            "IDR",
+            "BRL",
+            "RUB",
+            "HRK",
+            "JPY",
+            "THB",
+            "CHF",
+            "SGD",
+            "PLN",
+            "BGN",
+            "TRY",
+            "CNY",
+            "NOK",
+            "NZD",
+            "ZAR",
+            "MXN",
+            "ILS",
+            "GBP",
+            "KRW",
+            "MYR"
+        ],
         base: "USD",
         amount: "1",
         convertTo: "INR",
