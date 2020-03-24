@@ -11,14 +11,58 @@ class Converter extends Component {
         date: ""
     };
 
+    constructor(props) {
+        super(props);
+        this.calculateAmount()
+    }
+
     handleSelect = (e) => {
         this.setState({
-            [e.target.name]: e.target.value
-        })
+                [e.target.name]: e.target.value,
+                result: null
+            },
+            this.calculateAmount
+        )
     };
 
     handleInput = (e) => {
-        this.setState({amount: e.target.value})
+        this.setState({
+                amount: e.target.value,
+                result: null
+            },
+            this.calculateAmount
+        );
+    };
+
+    handleSwap = (e) => {
+        const base = this.state.base;
+        const convertTo = this.state.convertTo;
+        e.preventDefault();
+        this.setState({
+                base: convertTo,
+                convertTo: base,
+                result: null
+            },
+            this.calculateAmount
+        );
+    };
+
+    calculateAmount = () => {
+        const amount = this.state.amount;
+        if (amount === isNaN) {
+            return
+        } else {
+            fetch(`https://api.exchangeratesapi.io/latest?base=${this.state.base}`)
+                .then(res => res.json())
+                .then(data => {
+                    const date = data.date;
+                    const result = (data.rates[this.state.convertTo] * this.state.amount).toFixed(4);
+                    this.setState({
+                        date,
+                        result
+                    })
+                })
+        }
     };
 
     render() {
@@ -30,8 +74,8 @@ class Converter extends Component {
                     <div className="col-lg-7 mx-auto">
                         <div className="card card-body">
                             <h5>{amount} {base} is equivalent to</h5>
-                            <h2>{result} {convertTo}</h2>
-                            <p>As of now</p>
+                            <h2>{result === null ? "Calculating..." : result} {convertTo}</h2>
+                            <p>As of {date}</p>
                             <div className="row">
                                 <div className="col-auto">
                                     <form className="form-inline mb-4">
@@ -61,6 +105,8 @@ class Converter extends Component {
 
                                     <form className="form-inline mb-4">
                                         <input
+                                            disabled={true}
+                                            value={result === null ? "Calculating..." : result}
                                             className="form-control form-control-lg mx-3"
                                         />
                                         <select
@@ -85,7 +131,7 @@ class Converter extends Component {
 
                                 <div className="col-auto">
                                     <div className="m-4">
-                                        <h1 className="swap">&#8595;&#8593;</h1>
+                                        <h1 onClick={this.handleSwap} className="swap">&#8595;&#8593;</h1>
                                     </div>
                                 </div>
 

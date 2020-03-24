@@ -6,7 +6,7 @@ import NavBar from "./components/Navbar";
 function App() {
     return (
         <div>
-            {/*<NavBar/>*/}
+            <NavBar/>
             <Converter/>
         </div>
     );
