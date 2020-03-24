@@ -29,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Hiren Vadher &lt;hirenvadher954@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZGKSRynwBZN4jHi9wfiINeP5pQ" />
@@ -110,25 +115,33 @@
       <screen x="0" y="0" width="1360" height="732" />
     </state>
     <state x="418" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.732@0.0.1360.732" timestamp="1584982802331" />
-    <state width="1314" height="172" key="GridCell.Tab.0.bottom" timestamp="1585029754483">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1585033261130">
       <screen x="0" y="0" width="1360" height="732" />
     </state>
-    <state width="1314" height="172" key="GridCell.Tab.0.bottom/0.0.1360.732@0.0.1360.732" timestamp="1585029754483" />
-    <state width="1314" height="172" key="GridCell.Tab.0.center" timestamp="1585029754482">
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1360.732@0.0.1360.732" timestamp="1585033261130" />
+    <state width="1314" height="172" key="GridCell.Tab.0.bottom" timestamp="1585033395245">
       <screen x="0" y="0" width="1360" height="732" />
     </state>
-    <state width="1314" height="172" key="GridCell.Tab.0.center/0.0.1360.732@0.0.1360.732" timestamp="1585029754482" />
-    <state width="1314" height="172" key="GridCell.Tab.0.left" timestamp="1585029754482">
+    <state width="1314" height="172" key="GridCell.Tab.0.bottom/0.0.1360.732@0.0.1360.732" timestamp="1585033395245" />
+    <state width="1314" height="172" key="GridCell.Tab.0.center" timestamp="1585033395244">
       <screen x="0" y="0" width="1360" height="732" />
     </state>
-    <state width="1314" height="172" key="GridCell.Tab.0.left/0.0.1360.732@0.0.1360.732" timestamp="1585029754482" />
-    <state width="1314" height="172" key="GridCell.Tab.0.right" timestamp="1585029754482">
+    <state width="1314" height="172" key="GridCell.Tab.0.center/0.0.1360.732@0.0.1360.732" timestamp="1585033395244" />
+    <state width="1314" height="172" key="GridCell.Tab.0.left" timestamp="1585033395243">
       <screen x="0" y="0" width="1360" height="732" />
     </state>
-    <state width="1314" height="172" key="GridCell.Tab.0.right/0.0.1360.732@0.0.1360.732" timestamp="1585029754482" />
+    <state width="1314" height="172" key="GridCell.Tab.0.left/0.0.1360.732@0.0.1360.732" timestamp="1585033395243" />
+    <state width="1314" height="172" key="GridCell.Tab.0.right" timestamp="1585033395244">
+      <screen x="0" y="0" width="1360" height="732" />
+    </state>
+    <state width="1314" height="172" key="GridCell.Tab.0.right/0.0.1360.732@0.0.1360.732" timestamp="1585033395244" />
     <state x="181" y="1" key="SettingsEditor" timestamp="1584983075385">
       <screen x="0" y="0" width="1360" height="732" />
     </state>
     <state x="181" y="1" key="SettingsEditor/0.0.1360.732@0.0.1360.732" timestamp="1584983075385" />
+    <state x="280" y="102" key="Vcs.Push.Dialog.v2" timestamp="1585033411613">
+      <screen x="0" y="0" width="1360" height="732" />
+    </state>
+    <state x="280" y="102" key="Vcs.Push.Dialog.v2/0.0.1360.732@0.0.1360.732" timestamp="1585033411613" />
   </component>
 </project>
